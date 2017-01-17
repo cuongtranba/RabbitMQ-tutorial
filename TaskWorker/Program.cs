@@ -25,6 +25,8 @@ namespace TaskWorker
                                  autoDelete: false,
                                  arguments: null);
 
+
+
                     Console.WriteLine("enter your message");
                     var message = string.Empty;
                     while (message != "exit")
