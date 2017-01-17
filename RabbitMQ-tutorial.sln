@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.RabbitMQ-tutorial", "RabbitMQ-tutorial\1.RabbitMQ-tutorial.csproj", "{59B499EF-7380-4C02-9A06-309B84E23D00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.receiving", "receiving\2.receiving.csproj", "{A003CC39-CFA7-48BE-81ED-A86E1661A4F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.TaskWorker_Send", "TaskWorker\4.TaskWorker_Send.csproj", "{A03C07A4-CE0C-48C0-BFB0-0C9CDCCC270D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.TaskWorker_receive", "TaskWorker_receive\3.TaskWorker_receive.csproj", "{2FA84D2E-C162-44DA-A166-8BFC81994721}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59B499EF-7380-4C02-9A06-309B84E23D00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59B499EF-7380-4C02-9A06-309B84E23D00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59B499EF-7380-4C02-9A06-309B84E23D00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59B499EF-7380-4C02-9A06-309B84E23D00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A003CC39-CFA7-48BE-81ED-A86E1661A4F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A003CC39-CFA7-48BE-81ED-A86E1661A4F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A003CC39-CFA7-48BE-81ED-A86E1661A4F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A003CC39-CFA7-48BE-81ED-A86E1661A4F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A03C07A4-CE0C-48C0-BFB0-0C9CDCCC270D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A03C07A4-CE0C-48C0-BFB0-0C9CDCCC270D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A03C07A4-CE0C-48C0-BFB0-0C9CDCCC270D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A03C07A4-CE0C-48C0-BFB0-0C9CDCCC270D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FA84D2E-C162-44DA-A166-8BFC81994721}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FA84D2E-C162-44DA-A166-8BFC81994721}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FA84D2E-C162-44DA-A166-8BFC81994721}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FA84D2E-C162-44DA-A166-8BFC81994721}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
