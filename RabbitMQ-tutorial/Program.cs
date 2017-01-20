@@ -11,7 +11,7 @@ namespace RabbitMQ_tutorial
     {
         static void Main(string[] args)
         {
-            var factory=new ConnectionFactory()
+            var factory = new ConnectionFactory()
             {
                 HostName = "localhost",
             };
@@ -25,14 +25,22 @@ namespace RabbitMQ_tutorial
                                  autoDelete: false,
                                  arguments: null);
 
-                    string message = "cccc!";
-                    var body = Encoding.UTF8.GetBytes(message);
+                    string message = string.Empty;
+                    Console.WriteLine("enter your message");
 
-                    channel.BasicPublish(exchange: "",
-                                         routingKey: "hello",
-                                         basicProperties: null,
-                                         body: body);
-                    Console.WriteLine(" [x] Sent {0}", message);
+                    while (message != "exit")
+                    {
+                        message = Console.ReadLine();
+                        var body = Encoding.UTF8.GetBytes(message);
+
+                        channel.BasicPublish(exchange: "",
+                                             routingKey: "hello",
+                                             basicProperties: null,
+                                             body: body);
+                        Console.WriteLine(" [x] Sent {0}", message);
+                    }
+
+                    
                 }
             }
             Console.WriteLine(" Press [enter] to exit.");
