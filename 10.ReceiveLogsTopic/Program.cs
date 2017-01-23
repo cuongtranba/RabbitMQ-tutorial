@@ -19,22 +19,9 @@ namespace _10.ReceiveLogsTopic
                 channel.ExchangeDeclare(exchange: "topic_logs", type: "topic");
                 var queueName = channel.QueueDeclare().QueueName;
 
-                if (args.Length < 1)
-                {
-                    Console.Error.WriteLine("Usage: {0} [binding_key...]",
-                                            Environment.GetCommandLineArgs()[0]);
-                    Console.WriteLine(" Press [enter] to exit.");
-                    Console.ReadLine();
-                    Environment.ExitCode = 1;
-                    return;
-                }
-
-                foreach (var bindingKey in args)
-                {
-                    channel.QueueBind(queue: queueName,
+                channel.QueueBind(queue: queueName,
                                       exchange: "topic_logs",
-                                      routingKey: bindingKey);
-                }
+                                      routingKey: "*.info");
 
                 Console.WriteLine(" [*] Waiting for messages. To exit press CTRL+C");
 
